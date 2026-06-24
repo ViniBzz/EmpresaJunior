@@ -3,35 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>UNASP Empresa Júnior</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
 
-  <header class="site-header">
-    <div class="main-menu">
-      <div class="container main-menu-content">
-        <a href="#inicio" class="logo-area">
-          <img src="img/unasp-junior-logo.jpg" alt="Logo UNASP Empresa Júnior">
-        </a>
-
-        <nav class="nav" id="nav">
-          <a href="#inicio">Início</a>
-          <a href="#sobre">Quem somos</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#diagnostico">Diagnóstico</a>
-          <a href="#funciona">Como funciona</a>
-          <a href="#contato">Fale conosco</a>
-        </nav>
-
-        <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu">
-          ☰
-        </button>
-      </div>
-    </div>
-  </header>
+  <div data-include="components/header.html"></div>
 
   <main>
 
@@ -64,7 +44,7 @@
           </div>
 
           <div class="hero-buttons">
-            <a 
+            <a
               href="https://wa.me/551921188450?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20UNASP%20Empresa%20J%C3%BAnior."
               class="btn btn-primary"
               target="_blank"
@@ -179,7 +159,7 @@
           </p>
         </div>
 
-        <a 
+        <a
           href="https://wa.me/551921188450?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20empresarial%20gratuito%20com%20a%20UNASP%20Empresa%20J%C3%BAnior."
           class="btn btn-light"
           target="_blank"
@@ -198,32 +178,146 @@
         </div>
 
         <div class="steps">
-          <div class="step">
+          <article class="step">
             <span>1</span>
             <h3>Contato inicial</h3>
             <p>Você entra em contato pelo WhatsApp ou email e explica sua necessidade.</p>
-          </div>
+          </article>
 
-          <div class="step">
+          <article class="step">
             <span>2</span>
             <h3>Diagnóstico</h3>
             <p>A equipe analisa o caso e identifica os principais pontos de melhoria.</p>
-          </div>
+          </article>
 
-          <div class="step">
+          <article class="step">
             <span>3</span>
             <h3>Consultoria</h3>
             <p>Apresentamos orientações e soluções de acordo com a sua realidade.</p>
-          </div>
+          </article>
 
-          <div class="step">
+          <article class="step">
             <span>4</span>
             <h3>Acompanhamento</h3>
             <p>Quando necessário, acompanhamos a aplicação das melhorias sugeridas.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
+
+    <section class="planos" id="planos">
+  <div class="container">
+    <div class="section-title planos-title">
+      <span class="section-tag">Investimento</span>
+      <h2>Planos que cabem no seu <em>bolso</em></h2>
+      <p>
+        Todos os planos incluem diagnóstico gratuito e suporte pós-entrega.
+        Valores orientativos — consulte para receber um orçamento exato.
+      </p>
+    </div>
+
+    <div class="planos-grid">
+
+      <article class="plano-card">
+        <div class="plano-nome">Essencial</div>
+        <h3>Para quem está começando</h3>
+        <p>
+          Ideal para MEIs, autônomos e pessoas físicas que precisam de orientação
+          pontual e organização básica.
+        </p>
+
+        <div class="plano-preco-area">
+          <span>A partir de</span>
+          <strong>R$ 150<small>/serviço</small></strong>
+        </div>
+
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Diagnóstico inicial gratuito</li>
+          <li><i class="fa-solid fa-check"></i> 1 serviço à escolha</li>
+          <li><i class="fa-solid fa-check"></i> Relatório de entrega</li>
+          <li><i class="fa-solid fa-check"></i> Suporte por 15 dias</li>
+          <li><i class="fa-solid fa-check"></i> Atendimento por WhatsApp</li>
+        </ul>
+
+        <a
+          href="https://wa.me/551921188450?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Essencial%20da%20UNASP%20Empresa%20J%C3%BAnior."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="plano-btn"
+        >
+          Solicitar orçamento
+        </a>
+      </article>
+
+      <article class="plano-card plano-destaque">
+        <div class="plano-badge">Mais escolhido</div>
+
+        <div class="plano-nome">Empresarial</div>
+        <h3>Para pequenas empresas</h3>
+        <p>
+          Para MEs e pequenos negócios que precisam de suporte contínuo,
+          organização financeira e consultoria estratégica.
+        </p>
+
+        <div class="plano-preco-area">
+          <span>A partir de</span>
+          <strong>R$ 390<small>/mês</small></strong>
+        </div>
+
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Diagnóstico inicial gratuito</li>
+          <li><i class="fa-solid fa-check"></i> Até 3 serviços por mês</li>
+          <li><i class="fa-solid fa-check"></i> Reuniões mensais de acompanhamento</li>
+          <li><i class="fa-solid fa-check"></i> Relatórios gerenciais mensais</li>
+          <li><i class="fa-solid fa-check"></i> Suporte por 30 dias</li>
+          <li><i class="fa-solid fa-check"></i> Atendimento prioritário</li>
+        </ul>
+
+        <a
+          href="https://wa.me/551921188450?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Empresarial%20da%20UNASP%20Empresa%20J%C3%BAnior."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="plano-btn"
+        >
+          Solicitar orçamento
+        </a>
+      </article>
+
+      <article class="plano-card">
+        <div class="plano-nome">Premium</div>
+        <h3>Para empresas em crescimento</h3>
+        <p>
+          Para empresas que precisam de uma parceria estratégica mais completa
+          em gestão, finanças e organização.
+        </p>
+
+        <div class="plano-preco-area">
+          <span>A partir de</span>
+          <strong>R$ 750<small>/mês</small></strong>
+        </div>
+
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Diagnóstico inicial gratuito</li>
+          <li><i class="fa-solid fa-check"></i> Serviços personalizados</li>
+          <li><i class="fa-solid fa-check"></i> BPO financeiro completo</li>
+          <li><i class="fa-solid fa-check"></i> Consultoria estratégica mensal</li>
+          <li><i class="fa-solid fa-check"></i> Suporte contínuo</li>
+          <li><i class="fa-solid fa-check"></i> Relatórios personalizados</li>
+        </ul>
+
+        <a
+          href="https://wa.me/551921188450?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Premium%20da%20UNASP%20Empresa%20J%C3%BAnior."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="plano-btn"
+        >
+          Solicitar orçamento
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
 
     <section class="contato" id="contato">
       <div class="container contato-content">
@@ -238,7 +332,35 @@
             <p><strong>WhatsApp:</strong> (19) 2118-8450</p>
             <p><strong>Email:</strong> consultoria.empresajuniorht@gmail.com</p>
             <p><strong>Local:</strong> Rua Pastor Hugo Gegembauer, 265 - Parque Ortolândia, Hortolândia - SP, 13184-010</p>
-            <p><strong>Atendimento:</strong> Segunda a quinta, das 12h às 18h. Sexta, das 10h às 16h.</p>
+            <p><strong>Atendimento:</strong> Segunda a quinta, das 16h às 19h.</p>
+          </div>
+
+          <div class="contato-botoes">
+            <a
+              class="contato-btn whatsapp-btn"
+              href="https://wa.me/551921188450?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20UNASP%20Empresa%20J%C3%BAnior."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>Fale com nossos consultores</span>
+              </div>
+            </a>
+
+            <a
+              class="contato-btn instagram-btn"
+              href="https://www.instagram.com/unasp.empresa.junior/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-instagram"></i>
+              <div>
+                <strong>Instagram</strong>
+                <span>Acompanhe nossas novidades</span>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -254,59 +376,10 @@
 
   </main>
 
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-logo-box">
-        <img src="img/unasp-junior-logo.jpg" alt="Logo UNASP Empresa Júnior">
-      </div>
+  <div data-include="components/footer.html"></div>
+  <div data-include="components/whatsapp.html"></div>
 
-      <p>
-        UNASP Empresa Júnior — Soluções em negócios e finanças.
-      </p>
-
-      <span>Campus Hortolândia</span>
-    </div>
-
-      <div class="contato-botoes">
-            <a 
-              class="contato-btn whatsapp-btn"
-              href="https://wa.me/551921188450?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20UNASP%20Empresa%20J%C3%BAnior."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-brands fa-whatsapp"></i>
-              <div>
-                <strong>WhatsApp</strong>
-                <span>Fale com nossos consultores</span>
-              </div>
-            </a>
-
-            <a 
-              class="contato-btn instagram-btn"
-              href="https://www.instagram.com/unasp.empresa.junior/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-brands fa-instagram"></i>
-              <div>
-                <strong>Instagram</strong>
-                <span>Acompanhe nossas novidades</span>
-              </div>
-            </a>
-          </div>
-
-  </footer>
-
-  <a 
-    href="https://wa.me/551921188450?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20UNASP%20Empresa%20J%C3%BAnior."
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Falar no WhatsApp"
-  >
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
+  <script src="componentes.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
