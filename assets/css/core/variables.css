@@ -1,0 +1,44 @@
+/* =========================================================
+   Variáveis e fonte global
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* =========================================================
+   UNASP Empresa Júnior
+   Configurações visuais compartilhadas
+   ========================================================= */
+
+/* ================= VARIÁVEIS ================= */
+
+:root {
+  --azul-escuro: #071f45;
+  --azul: #0b4f9f;
+  --azul-medio: #135fae;
+  --azul-claro: #eaf3ff;
+
+  --roxo: #211a46;
+  --roxo-card: rgba(255, 255, 255, 0.055);
+
+  --laranja: #f15a24;
+  --laranja-hover: #ff6a32;
+
+  --branco: #ffffff;
+  --cinza: #f4f6f9;
+  --cinza-2: #f8fafc;
+  --cinza-texto: #5c6670;
+  --texto: #172033;
+
+  --borda: rgba(7, 31, 69, 0.1);
+  --borda-clara: rgba(255, 255, 255, 0.13);
+
+  --sombra: 0 18px 40px rgba(7, 31, 69, 0.14);
+  --sombra-forte: 0 25px 60px rgba(0, 0, 0, 0.22);
+
+  --container: 1120px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 28px;
+  --transicao: 0.3s ease;
+}

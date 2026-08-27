@@ -1,0 +1,73 @@
+/* =========================================================
+   Componente: botões
+   ========================================================= */
+
+/* ================= BOTÕES ================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 26px;
+  border-radius: 999px;
+  font-weight: 800;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transicao);
+  text-align: center;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: var(--laranja);
+  color: var(--branco);
+  box-shadow: 0 14px 24px rgba(241, 90, 36, 0.28);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  background: var(--laranja-hover);
+  box-shadow: 0 18px 30px rgba(241, 90, 36, 0.35);
+}
+
+.btn-light {
+  background: var(--branco);
+  color: var(--azul-escuro);
+}
+
+.btn-light:hover {
+  background: var(--laranja);
+  color: var(--branco);
+}
+
+.btn-outline-dark {
+  color: var(--azul-escuro);
+  border-color: var(--azul-escuro);
+  background: var(--branco);
+}
+
+.btn-outline-dark:hover {
+  color: var(--branco);
+  background: var(--azul-escuro);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.7);
+  color: var(--branco);
+}
+
+.btn-outline-light:hover {
+  background: var(--branco);
+  color: var(--roxo);
+}
+
+@media (max-width: 560px) {
+  .btn {
+    width: 100%;
+  }
+}
